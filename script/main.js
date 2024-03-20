@@ -173,9 +173,3 @@ document.addEventListener("mousemove", (ev) => {
   cursor.style.left = x + "px";
   cursor.style.display = "block";
 });
-
-  //effet du cursor lors de la sortie de la souris //
-
-document.addEventListener ("mouseout"), () => {
-  cursor.style.display = "none";
-}
