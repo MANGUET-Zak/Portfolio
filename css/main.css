@@ -569,7 +569,8 @@ img::selection {
 }
 .contact__box {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 4rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -585,6 +586,7 @@ img::selection {
   gap: 2rem;
 }
 .contact__logo {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .contact__content a:hover {
@@ -600,6 +602,9 @@ img::selection {
 @media only screen and (min-width: 768px) {
   .contact {
     margin-top: 20vh;
+  }
+  .contact__box {
+    flex-direction: row;
   }
 }
 .cursor {

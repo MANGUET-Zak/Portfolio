@@ -8,7 +8,8 @@
 
     &__box{
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 4rem;
         text-align: center;
         margin-top: 2rem;
     }
@@ -27,6 +28,7 @@
     }
 
     &__logo{
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
@@ -52,5 +54,9 @@
 @media only screen and (min-width: 768px){
     .contact{
         margin-top: 20vh;
+
+        &__box{
+            flex-direction: row;
+        }
     }
 }
