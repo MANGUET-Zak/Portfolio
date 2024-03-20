@@ -1,0 +1,43 @@
+
+.cursor{
+    z-index: 999;
+    position: absolute;
+    background-color: var(--main-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px var(--main-color),
+                0 0 60px var(--main-color),
+                0 0 100px var(--main-color);
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors{
+    0%{
+        filter: invert(0);
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(2.0);
+        filter: invert(1);
+    }
+    100%{
+        filter: invert(0);
+        transform: scale(1.0);
+    }
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    background: var(--main-color);
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}

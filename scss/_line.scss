@@ -1,0 +1,26 @@
+.line-container{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .line-container{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 30vh;
+        text-align: center;
+        overflow: hidden;
+        z-index: 500;
+
+        &__svg{
+            display: inline-block;
+            min-height: 100%;
+            filter: blur(2px);
+        }
+    }
+}
+
