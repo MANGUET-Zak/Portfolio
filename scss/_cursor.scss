@@ -1,5 +1,10 @@
 
 .cursor{
+    display: none;
+}
+
+@media only screen and (min-width: 1024px){
+.cursor{
     z-index: 999;
     position: absolute;
     background-color: var(--main-color);
@@ -40,4 +45,6 @@
     opacity: 0.2;
     transform: translate(-30%, -30%);
     border-radius: 50%;
+}
+
 }
