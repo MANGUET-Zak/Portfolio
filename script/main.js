@@ -173,3 +173,16 @@ document.addEventListener("mousemove", (ev) => {
   cursor.style.left = x + "px";
   cursor.style.display = "block";
 });
+
+// menu burger //
+
+const lien = document.querySelectorAll (".menu__content");
+const menu = document.querySelector (".menu__liste");
+
+lien.forEach(burgerFerme =>{
+  burgerFerme.addEventListener ("click", fermeMenu)
+})
+
+function fermeMenu (){
+  document.querySelector('.menu__input').checked = false;
+}

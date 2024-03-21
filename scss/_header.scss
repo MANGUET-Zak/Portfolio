@@ -96,11 +96,13 @@
 
     &__input {
         display: none;
+
         &:checked~.menu__liste {
             /* etat final*/
             right: 0;
             bottom: 0;
         }
+
         &:checked~.menu__button::before {
             content: '✖';
             cursor: pointer;
