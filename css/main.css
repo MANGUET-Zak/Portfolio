@@ -554,7 +554,7 @@ img::selection {
 }
 @media only screen and (min-width: 1024px) {
   .box-container {
-    min-height: 50vh;
+    min-height: 70vh;
   }
   .box {
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%);
