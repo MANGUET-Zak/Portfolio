@@ -59,12 +59,12 @@
     }
 
     &__button {
-        font-size: 3rem;
+        font-size: 5rem;
         height: inherit;
         display: flex;
         align-items: center;
         padding: 1rem;
-        margin-right: 2.4rem;
+        margin-right: 10rem;
 
         &::before {
             content: '☰';
