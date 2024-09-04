@@ -212,12 +212,12 @@ img::selection {
   transform: translateX(100%);
 }
 .menu__button {
-  font-size: 3rem;
+  font-size: 5rem;
   height: inherit;
   display: flex;
   align-items: center;
   padding: 1rem;
-  margin-right: 2.4rem;
+  margin-right: 10rem;
 }
 .menu__button::before {
   content: "☰";
@@ -649,4 +649,4 @@ img::selection {
     transform: translate(-30%, -30%);
     border-radius: 50%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
