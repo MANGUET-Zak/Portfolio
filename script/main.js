@@ -35,7 +35,7 @@ const typeEffect = () => {
   if(!isDeleting && charIndex < currentWord.length){
     // if condition true, type the next character //
     charIndex++;
-    setTimeout(typeEffect, 200);
+    setTimeout(typeEffect, 100);
   } else if(isDeleting && charIndex > 0) {
     // if condition true, remove the previous character //
     charIndex--;
@@ -44,7 +44,7 @@ const typeEffect = () => {
     // if word is deleted then switch to the next word //
     isDeleting = !isDeleting;
     wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
-    setTimeout(typeEffect, 1200);
+    setTimeout(typeEffect, 800);
   }
 }
 
